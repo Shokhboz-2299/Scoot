@@ -441,6 +441,7 @@ img {
 }
 
 .site-header {
+  z-index: 2;
   position: sticky;
   top: 0;
   padding-top: 22px;
@@ -551,6 +552,7 @@ img {
 }
 
 .site-button:hover {
+  cursor: pointer;
   border: 3px solid #FCB72B;
   color: #fcb72b;
   background-color: transparent;
@@ -872,5 +874,293 @@ img {
   .manual__text {
     margin: 0;
     margin-top: 24px;
+  }
+}
+.good-sides-section {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 307px;
+  background-image: url("../../images/good-sides-back1.png"), url("../../images/good-sides-back2.png"), url("../../images/good-sides-back3.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 500px) 100px, calc(50% - 600px) 620px, calc(50% + 500px) 1100px;
+}
+
+.good-sides__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.good-sides__item {
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.good-sides__reponsive-img-wrapper {
+  display: none;
+}
+
+.good-sides__right-img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.good-sides__left-img {
+  position: relative;
+  margin: 0;
+}
+
+.good-sides__img {
+  margin-top: 17px;
+  display: block;
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+
+.good-sides__content {
+  max-width: 445px;
+}
+
+.good-sides__heading {
+  margin: 0;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.good-sides__text {
+  margin-top: 24px;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.good-sides__button {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  .good-sides-section {
+    padding-top: 30px;
+    padding-bottom: 104px;
+    background-position: calc(50% + 200px) 70px, calc(50% - 300px) 1050px, calc(50% + 300px) 1950px;
+  }
+
+  .good-sides__item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 600px;
+    text-align: center;
+  }
+
+  .good-sides__text {
+    max-width: 573px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .good-sides-section {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    background-size: 622px 348px;
+    background-position: calc(50% + 120px) 70px, calc(50% - 190px) 900px, calc(50% + 170px) 1700px;
+  }
+
+  .good-sides__item {
+    margin: 0;
+    margin-top: 450px;
+  }
+
+  .good-sides__heading {
+    max-width: 311px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -2.14286px;
+  }
+
+  .good-sides__text {
+    max-width: 311px;
+    margin-top: 32px;
+  }
+}
+.call-to-action {
+  background-color: #495567;
+  background-image: url("../../images/action-circle.png"), url("../../images/action-circle.png"), url("../../images/Mask-action.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 100px) bottom, calc(50% + 320px) bottom, calc(50% + 720px) 140px;
+}
+
+.action__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 102px;
+  padding-bottom: 102px;
+}
+
+.cation__heading {
+  margin: 0;
+  max-width: 415px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #ffffff;
+}
+
+.action__link-img {
+  display: flex;
+  align-items: center;
+}
+
+.action__link {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+.action__img {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .call-to-action {
+    background-position: calc(50% - 400px) bottom, center bottom, calc(50% + 400px) 240px;
+  }
+
+  .action__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 62px;
+    padding-bottom: 142px;
+  }
+
+  .cation__heading {
+    max-width: 457px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .action__link-img {
+    margin-top: 40px;
+  }
+
+  .action__link {
+    display: inline-block;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .call-to-action {
+    background-position: calc(50% - 800px) bottom, calc(50% - 200px) bottom, calc(50% + 200px) 160px;
+  }
+
+  .action__wrapper {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .cation__heading {
+    max-width: 311px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .action__link {
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .action__img {
+    width: 130px;
+    height: 40px;
+  }
+}
+.site-footer {
+  background-color: #333A44;
+}
+
+.footer__wrapper {
+  padding-top: 35px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav {
+  margin-left: 26px;
+}
+
+.footer__link {
+  color: #939CAA;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.footer__social-item {
+  margin-left: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer__wrapper {
+    padding-top: 64px;
+    padding-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__nav {
+    margin: 0;
+    margin-top: 26px;
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+  }
+
+  .site-nav__item {
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  .footer__social-list {
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer__social-item {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

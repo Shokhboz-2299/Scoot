@@ -1,0 +1,133 @@
+// good sides section 
+.good-sides-section {
+  background-color: $color-white;
+  padding-top: 30px;
+  padding-bottom: 307px;
+    background-image: 
+    url("../../images/good-sides-back1.png"),
+    url("../../images/good-sides-back2.png"),
+    url("../../images/good-sides-back3.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 500px) 100px, calc(50% - 600px) 620px, calc(50% + 500px) 1100px;
+
+
+
+  // background-image: url("../../images/gray-mask.png"),url("../../images/gray-mask.png"),url("../../images/gray-mask.png");
+  // background-repeat: no-repeat;
+  // background-position: calc(50% + 820px) 10px, calc(50% - 820px) 620px, calc(50% + 820px) 1240px;
+}
+
+.good-sides__list {
+  @include list-unstyled;
+}
+
+.good-sides__item {
+  margin: 0;
+  position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 150px;
+}
+
+.good-sides__reponsive-img-wrapper {
+  display: none;
+}
+
+.good-sides__right-img {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.good-sides__left-img {
+  position: relative;
+  margin: 0;
+}
+
+
+.good-sides__img {
+  margin-top: 17px;
+  display: block;
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+
+.good-sides__content {
+  max-width: 445px;
+}
+
+.good-sides__heading {
+  margin: 0;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: $dark-navy;
+}
+
+.good-sides__text {
+  margin-top: 24px;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $dim-grey;
+}
+
+.good-sides__button {
+  margin-top: 40px;
+}
+
+// responsive 
+
+@include breakpoint-down (900px) {
+  .good-sides-section {
+    padding-top: 30px;
+    padding-bottom: 104px;
+    background-position: calc(50% + 200px) 70px, calc(50% - 300px) 1050px, calc(50% + 300px) 1950px;
+  }
+  .good-sides__item {
+    margin: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 600px;
+     text-align: center;
+  }
+
+  .good-sides__text {
+    max-width: 573px;
+  }
+}
+
+@include breakpoint-down (500px) {
+  .good-sides-section {
+    padding-top: 30px;
+    padding-bottom: 120px;
+    background-size: 622px 348px;
+    background-position: calc(50% + 120px) 70px, calc(50% - 190px) 900px, calc(50% + 170px) 1700px;
+  }
+  .good-sides__item {
+    margin: 0;
+     margin-top: 450px;
+  }
+
+  .good-sides__heading {
+    max-width: 311px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -2.14286px;
+  }
+
+  .good-sides__text {
+    max-width: 311px;
+    margin-top: 32px;
+  }
+}
