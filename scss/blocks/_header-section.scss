@@ -1,8 +1,9 @@
 // HEADER SECTION 
 
 .site-header {
-  z-index: 2;
-  position: sticky;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
   top: 0;
   padding-top: 22px;
   padding-bottom: 21px;
